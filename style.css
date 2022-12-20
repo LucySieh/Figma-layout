@@ -1,0 +1,43 @@
+@font-face {
+    font-family: NeueMontreal;
+    src: url(./NeueMontreal-Regular.otf);
+}
+
+.home-page {
+    background-image: url(./image-mobile/Homepage-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     /* cover -> for full screen */
+}
+
+nav {
+    height: 64px;
+    background-color: burlywood;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shopping-guide-line > *{
+    display: inline-flex;
+    flex-direction: row;
+}
+.shopping-guide-line > * ::first-line {
+    display: flexbox;
+    flex-direction: column;
+
+}
+
+
+.shopping-guide-line > hr {
+    width: 27px;
+    margin-bottom: 5px;
+    margin-right: 16px;
+}
+
+.nav > * > p {
+    font-family: NeueMontreal;
+    font-size: 12px;
+    line-height: 32px;
+}
