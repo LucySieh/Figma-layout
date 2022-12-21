@@ -3,41 +3,95 @@
     src: url(./NeueMontreal-Regular.otf);
 }
 
+@font-face {
+    font-family: RecklessNeue;
+    src: url(./RecklessNeue-Regular.ttf);
+}
+
 .home-page {
-    background-image: url(./image-mobile/Homepage-mobile.jpg);
+    background-image: url(./image-mobile/home-page.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-clip: unset;
      /* cover -> for full screen */
 }
 
 nav {
     height: 64px;
-    background-color: burlywood;
 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
-.shopping-guide-line > *{
-    display: inline-flex;
-    flex-direction: row;
-}
-.shopping-guide-line > * ::first-line {
-    display: flexbox;
-    flex-direction: column;
-
-}
-
-
-.shopping-guide-line > hr {
+hr {
     width: 27px;
     margin-bottom: 5px;
-    margin-right: 16px;
+}
+
+.shopping-guide-line > p {
+    width: 24px;
+
+    position: absolute;
+    top: 16px;
+    left: 43px;
+}
+
+.shopping-guide-line {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.brand-name > image {
+    position: absolute;
+    top: 22.5px;
+}
+
+.shopping-bag > p {
+    position: absolute;
+    right: 44px;
+    top: 16px;
+}
+
+.shopping-bag > img {
+    width: 20px;
+}
+
+.shopping-bag {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 
 .nav > * > p {
     font-family: NeueMontreal;
     font-size: 12px;
     line-height: 32px;
+    font-weight: 400;
+}
+
+.home-guide-text > h1 {
+    font-family: RecklessNeue;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.home-guide-text {
+    width: 300px;
+
+    position: absolute;
+    top: 280px;
+
+    text-align: center;
+}
+
+button {
+    width: 137px;
+    height: 30px;
+
+    background-color: #FFF8DC;
+    border:0ch transparent;
+    border-radius: 8px;
 }
