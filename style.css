@@ -14,7 +14,7 @@
 }
 
 .home-page {
-    background-image: url(./image-mobile/home-page.jpg);
+    background-image: url(./background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
      /* cover -> for full screen */
@@ -29,23 +29,32 @@ nav {
     align-items: center;
 }
 
+span {
+    padding-left: 16px;
+}
+
 hr {
     width: 27px;
     margin-bottom: 5px;
 }
 
 .shopping-guide-line > p {
+    color: White;
     width: 24px;
 
     position: absolute;
     top: 16px;
     left: 43px;
+
+    padding-left: 16px;
 }
 
 .shopping-guide-line {
     display: flex;
     justify-content: center;
     gap: 16px;
+
+    padding-top: 16px;
 }
 
 .brand-name > image {
@@ -61,6 +70,10 @@ hr {
 
 .shopping-bag > img {
     width: 20px;
+}
+
+.shopping-bag > p {
+    color: White;
 }
 
 .shopping-bag {
@@ -83,11 +96,6 @@ hr {
 
     display: flex;
     justify-content: center;
-
-    position: absolute;
-    top: 280px;
-    bottom: 259px;
-    left: 37px;
 }
 
 .home-guide-text > h1 {
@@ -95,6 +103,7 @@ hr {
     font-size: 36px;
     font-weight: 400;
     line-height: 42px;
+    /* color:; */
 
     position: absolute;
     top: 280px;
@@ -116,4 +125,33 @@ button {
 
     position: absolute;
     top: 412px;
+}
+
+@media (min-width: 1024px) {
+    nav {
+        height: 52px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .shopping-guide-line > span {
+        padding-left: 72px;
+    }
+
+    .shopping-guide-line > p {
+        padding-left: 72px;
+
+        text-align: center;
+    }
+
+    .shopping-bag > p {
+        padding-right: 72px;
+    }
+
+    .shopping-bag > img {
+        padding-right: 72px;
+    }
 }
