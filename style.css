@@ -14,11 +14,13 @@
 }
 
 .home-page {
-    background-image: url(./background-image.jpg);
+    background-image: url(./image-mobile/Homepage-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
      /* cover -> for full screen */
      background-clip: unset;
+
+     height: 701px;
 }
 
 nav {
@@ -79,6 +81,7 @@ hr {
 .shopping-bag {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 8px;
 }
 
@@ -89,24 +92,12 @@ hr {
     font-weight: 400;
 }
 
-.home-guide-text {
-    width: 300px;
-    height: 162px;
-    gap: 48px;
-
-    display: flex;
-    justify-content: center;
-}
-
-.home-guide-text > h1 {
+.home-guide-text > span > h1 {
     font-family: RecklessNeue;
     font-size: 36px;
     font-weight: 400;
     line-height: 42px;
-    /* color:; */
-
-    position: absolute;
-    top: 280px;
+    color: White;
 
     width: 300px;
     height: 84px;
@@ -115,19 +106,46 @@ hr {
 }
 
 button {
-    margin-top: 48px;
     width: 137px;
     height: 30px;
+
+    padding: 8px 36px;
 
     background-color: #FFF8DC;
     border:0ch transparent;
     border-radius: 8px;
+}
 
-    position: absolute;
-    top: 412px;
+.home-guide-text {
+    width: 300px;
+    height: 162px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+
+    text-align: center;
+}
+
+.home-guide-text_wrapper {
+    padding-top: 280px;
+    padding-bottom: 290px;
+
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 1024px) {
+    .home-page {
+        background-image: url(./background-image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* cover -> for full screen */
+        background-clip: unset;
+
+        height: 737px;
+    }
     nav {
         height: 52px;
         width: 100%;
@@ -153,5 +171,179 @@ button {
 
     .shopping-bag > img {
         padding-right: 72px;
+    }
+}
+
+.intro-page {
+    background-color: white;
+}
+
+.introduction-text_content > h2 {
+    font-family: RecklessNeue;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+
+    margin-bottom: 36px;
+}
+
+.introduction-text_content > p {
+    font-family: NeueMontreal;
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+
+    margin-bottom: 24px;
+}
+
+.introduction-text_content {
+    width: 343px;
+    height: 295px;
+
+    text-align: center;
+}
+
+button {
+    width: 178px;
+    height: 30px;
+
+    padding: 8px 36px;
+
+    background-color: white;
+    border: 1px solid #DFDEDB;
+    border-radius: 8px;
+}
+
+.introduction-text_wrapper {
+    padding-top: 188px;
+    padding-bottom: 268px;
+
+    width: 343px;
+    height: 295px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introdution-image_desktop {
+    visibility: hidden;
+    display: none;
+}
+
+.introdution-image_mobile > :nth-child(1) {
+    position: absolute;
+    top: 742px;
+    left: 32px;
+
+    width: 147px;
+}
+
+.introdution-image_mobile > :nth-child(2) {
+    position: absolute;
+    top: 827px;
+    left: 292px;
+    right: 7px;
+
+    width: 76px;
+}
+
+.introdution-image_mobile > :nth-child(3) {
+    position: absolute;
+    top: 939px;
+    left: -65px;
+
+    width: 102px;
+}
+
+.introdution-image_mobile > :nth-child(4) {
+    position: absolute;
+    top: 923px;
+    left: 353px;
+}
+
+.introdution-image_mobile > :nth-child(5) {
+    position: absolute;
+    top: 1208px;
+    left: -130px;
+
+    width: 182px;
+}
+
+.introdution-image_mobile > :nth-child(6) {
+    position: absolute;
+    top: 1272px;
+    left: 252px;
+}
+
+@media (min-width: 1024px) {
+    .introduction-text_content > h2 {
+        font-style: italic;
+    }
+
+    .introduction-text_wrapper {
+        padding: 34%;
+        padding-top: 323px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .introdution-image_mobile {
+        visibility: hidden;
+        display: none;
+    }
+
+    .introdution-image_desktop {
+        visibility: visible;
+        display: flex;
+    }
+
+    .introdution-image_desktop > :nth-child(1) {
+        position: absolute;
+        top: 767px;
+        left: 37%;
+
+        width: 332px;
+    }
+
+    .introdution-image_desktop > :nth-child(2) {
+        position: absolute;
+        top: 999px;
+        left: 74%;
+
+        width: 172px;
+    }
+
+    .introdution-image_desktop > :nth-child(3) {
+        position: absolute;
+        top: 948px;
+        left: 2%;
+
+        width: 231px;
+    }
+
+    .introdution-image_desktop > :nth-child(4) {
+        position: absolute;
+        top: 1188px;
+        left: 84.5%;
+
+        width: 200px;
+    }
+
+    .introdution-image_desktop > :nth-child(5) {
+        position: absolute;
+        top: 1240px;
+        left: 0;
+
+        width: 413px;
+    }
+
+    .introdution-image_desktop > :nth-child(6) {
+        position: absolute;
+        top: 1427px;
+        left: 61.5%;
+
+        width: 355px;
     }
 }
