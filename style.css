@@ -276,6 +276,60 @@ button {
     left: 252px;
 }
 
+.feature-product-container > hr {
+    color: #DFDEDB;
+
+    width: 100%;
+}
+
+.feature-product-container > h2 {
+    font-family: RecklessNeue;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+    text-align: center;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.feature-product-card > img {
+    width: 171.5px;
+    height: 154px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 8px;
+}
+
+.text-card > p {
+    font-family: NeueMontreal;
+    color: #323334;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    padding-bottom: 24px;
+}
+
+.text-card > :last-child{
+    padding-bottom: 8px;
+}
+
+.feature-product-card {
+
+}
+
+.feature-product-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 @media (min-width: 1024px) {
     .introduction-text_content > h2 {
         font-style: italic;
@@ -346,4 +400,41 @@ button {
 
         width: 355px;
     }
+
+    .feature-product-card > img {
+        width: 330px;
+        height: 331px;
+    }
 }
+
+/* .passing-page {
+    background-image: url(./image-mobile/pass-page-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: unset;
+
+    height: 664px;
+}
+
+.chair-image-wrapper {
+    width: 251px;
+    height: 301px;
+
+    padding: 20px 20px 44px 20px;
+    background-color: #FFFFFF;
+
+    position: absolute;
+    left: 10%;
+
+}
+
+@media (min-width: 1024px) {
+    .passing-page{
+        background-image: url(./pass-page-background-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: unset;
+
+        height: 1081px;
+    }
+} */
