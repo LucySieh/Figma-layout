@@ -31,16 +31,16 @@ nav {
     align-items: center;
 }
 
-span {
+.guide-page {
     padding-left: 16px;
 }
 
-hr {
+.shopping-guide-line > .guide-page > hr {
     width: 27px;
     margin-bottom: 5px;
 }
 
-.shopping-guide-line > p {
+.shopping-guide-line > .guide-page > p {
     color: White;
     width: 24px;
 
@@ -155,7 +155,7 @@ button {
         align-items: center;
     }
 
-    .shopping-guide-line > span {
+    .shopping-guide-line > .guide-page {
         padding-left: 72px;
     }
 
@@ -305,7 +305,36 @@ button {
     padding: 8px;
 }
 
-.text-card > p {
+.feature-product-card :first-child {
+    border-left: 1px solid #DFDEDB;
+    border-bottom: 1px solid #DFDEDB;
+}
+
+.feature-product-card :nth-child(2) {
+    border-right: 1px solid #DFDEDB;
+    border-left: 1px solid #DFDEDB;
+    border-bottom: 1px solid #DFDEDB;
+}
+
+.feature-product-card :nth-child(3) {
+    border-left: 1px solid #DFDEDB;
+}
+
+.feature-product-card :nth-child(4) {
+    border-right: 1px solid #DFDEDB;
+    border-left: 1px solid #DFDEDB;
+}
+
+.feature-product-card > .text-card > p {
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.feature-product-card > img {
+    border-bottom: 0px;
+}
+
+ .text-card > p {
     font-family: NeueMontreal;
     color: #323334;
     font-weight: 400;
@@ -319,15 +348,28 @@ button {
     padding-bottom: 8px;
 }
 
-.feature-product-card {
-
-}
-
 .feature-product-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.feature-product-shop-all > hr {
+    color: #DFDEDB;
+    width: 100%;
+}
+
+.feature-prudoct-shop-all > P {
+    font-family: NeueMontreal;
+    color: #323334;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    text-align: center;
+
+    margin: 24px;
 }
 
 @media (min-width: 1024px) {
@@ -405,9 +447,109 @@ button {
         width: 330px;
         height: 331px;
     }
+
+    .feature-product-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .text-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text-card > :last-child {
+        padding-bottom: 24px;
+    }
+
+    .feature-product-card :first-child {
+        border: 0px;
+    }
+
+    .feature-product-card :nth-child(2) {
+        border: 0px;
+    }
+
+    .feature-product-card :nth-child(3) {
+        border: 0px;
+    }
+
+    .feature-product-card :nth-child(4) {
+        border: 0px;
+    }
+
+    .feature-prudoct-shop-all > :last-child {
+        margin-bottom: 22px;
+    }
 }
 
-/* .passing-page {
+.native-light-zone-container {
+    background-color: #384353;
+    height: 770px;
+}
+
+.native-light-zone-container > img {
+    width: 343px;
+    height: 319.18px;
+
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+}
+
+.native-light-zone-text > h2{
+    font-family: RecklessNeue;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FCFDFD;
+
+    padding-bottom: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.native-light-zone-text :nth-child(2) {
+    font-family: NeueMontreal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: #FCFDFD;
+
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.native-light-zone-text :nth-child(3) {
+    font-family: NeueMontreal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FCFDFD;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.native-light-zone-text > * {
+    text-align: left;
+}
+
+.native-light-zone-text {
+    padding-top: 40px;
+
+}
+
+.passing-page-image-container {
     background-image: url(./image-mobile/pass-page-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -417,19 +559,40 @@ button {
 }
 
 .chair-image-wrapper {
-    width: 251px;
-    height: 301px;
+    visibility: visible;
+    display: none;
+}
 
-    padding: 20px 20px 44px 20px;
-    background-color: #FFFFFF;
-
-    position: absolute;
-    left: 10%;
-
+.drawer-image-wrapper {
+    visibility: visible;
+    display: none;
 }
 
 @media (min-width: 1024px) {
-    .passing-page{
+    .native-light-zone-container {
+        height: 670px;
+    }
+
+    .native-light-zone-container > img {
+        height: 670px;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .native-light-zone-text {
+        width: 405px;
+        height: 280px;
+
+       position: absolute;
+       top: 2398px;
+       left: 157px;
+    }
+
+    .passing-page-image-container {
         background-image: url(./pass-page-background-image.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -437,4 +600,53 @@ button {
 
         height: 1081px;
     }
-} */
+
+    .chair-image-wrapper {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+
+        width: 251px;
+        height: 301px;
+
+        padding: 20px 20px 44px 20px;
+        background-color: #FFFFFF;
+
+        position: absolute;
+        top: 3193px;
+        left: 7.3%;
+        
+    }
+
+    .drawer-image-wrapper {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+
+        width: 251px;
+        height: 301px;
+
+        padding: 20px 20px 44px 20px;
+        background-color: #FFFFFF;
+
+        position: absolute;
+        top: 3611px;
+        left: 74.5%;
+    }
+
+    .passing-page-words > p {
+        font-family: NeueMontreal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #384353;
+    }
+
+    .passing-page-words {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-top: 10px;
+    }
+}
